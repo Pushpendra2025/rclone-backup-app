@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone backup (personal)</title><link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>rclone backup (personal)</h1>
+<p class="muted">A private, single-user backup setup.</p>
+<p>This is the Google sign-in identity for one person's backup tool. It is <a href="https://rclone.org">rclone</a>
+(open-source file-sync software) together with <a href="https://restic.net">restic</a> (open-source backup software),
+run by the owner on the owner's own computer.</p>
+<h2>What it does</h2>
+<ul>
+  <li>Every night it stores an encrypted backup of the owner's own files in the owner's own Google Drive.</li>
+  <li>It asks Google for the narrowest Drive permission (<code>drive.file</code>). It can see and change only the
+    files it created itself, and nothing else in the Drive.</li>
+  <li>Backups are encrypted on the owner's computer before upload, so the stored files can't be read without the
+    owner's password.</li>
+</ul>
+<h2>Who can use it</h2>
+<p>Only its owner. It is not offered as a service, has no other users, and does not ask anyone else for access.</p>
+<p>Questions: <a href="https://github.com/Pushpendra2025">github.com/Pushpendra2025</a></p>
+<footer>Last updated 2026-10-11 · <a href="privacy.html">Privacy policy</a></footer>
+</main></body></html>
